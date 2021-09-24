@@ -31,39 +31,61 @@ export default function Cards(props) {
       id: "1",
       label: "100",
       value: 100,
-      color: "#468df3",
+      color: "#56C2D6",
     },
     {
       id: "1",
       label: "100",
       value: 100,
-      color: "#468df3",
+      color: "#56C2D6",
     },
     {
       id: "1",
       label: "100",
       value: 100,
-      color: "#468df3",
+      color: "#56C2D6",
     },
     {
       id: "2",
       label: "75",
       value: 75,
-      color: "#ba72ff",
+      color: "#D6C756",
     },
     {
       id: "2",
       label: "75",
       value: 75,
-      color: "#ba72ff",
+      color: "#D6C756",
     },
     {
       id: "3",
       label: "92",
       value: 92,
-      color: "#a1cfff",
+      color: "#56C2D6",
     },
   ];
+
+  const statusAup = () => {
+    const colorA = "#56C2D6";
+    const colorD = "#56C2D6";
+
+    if (statusA === "up") {
+      return <div className="circle" style={{ background: colorA }}></div>;
+    } else if (statusA !== "up") {
+      return <div className="circle" style={{ background: colorD }}></div>;
+    }
+  };
+
+  const statusBup = () => {
+    const colorA = "#56C2D6";
+    const colorD = "#56C2D6";
+
+    if (statusB === "up") {
+      return <div className="circle" style={{ background: colorA }}></div>;
+    } else if (statusB !== "up") {
+      return <div className="circle" style={{ background: colorD }}></div>;
+    }
+  };
 
   const countDaysB = () => {
     let count = 0;
@@ -117,9 +139,11 @@ export default function Cards(props) {
             <div className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
                 <h6 className="mb-1">
-                  {tituloA} | {countDaysB()}
+                  {tituloA}
                 </h6>
-                <small>{statusA}</small>
+                <small>
+                  {statusAup()}{statusA}
+                </small>
               </div>
               <div className="mb-1 height-100">
                 <ResponsiveWaffleHtml
@@ -144,7 +168,7 @@ export default function Cards(props) {
             <div className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
                 <h6 className="mb-1">{tituloB}</h6>
-                <small>{statusB}</small>
+                <small>{statusBup()}{statusB}</small>
               </div>
               <div className="mb-1 height-100">
                 <ResponsiveWaffleHtml
