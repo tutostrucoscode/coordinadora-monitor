@@ -1,0 +1,19 @@
+.verticleLine {
+  height: 100%;
+  width: 2px;
+  background-color: #3994dd;
+}
+
+.circle {
+  margin-top: -10px;
+  float: left;
+  clip-path: circle(15%);
+  height: 3em;
+  width: 3em;
+}
+
+.none-space {
+  width: 100%; /*ancho*/
+  text-overflow: ellipsis;
+  white-space: pre;
+}

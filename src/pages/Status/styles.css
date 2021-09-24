@@ -1,0 +1,41 @@
+.imgLogoA {
+  height: 50px; /*altura*/
+  width: 350px; /*ancho*/
+}
+
+.ContainerLogoA {
+  padding-top: 20px; /*relleno superior*/
+  padding-bottom: 20px; /*relleno inferior*/
+}
+
+.BackgroundA-600px {
+  background-color: #106eb9;
+  height: 60px;
+}
+
+.BackgroundBlueA {
+  background-color: #106eb9;
+}
+
+.PBold500 {
+  font-weight: 500;
+}
+
+.PBold200 {
+  font-weight: 200;
+}
+
+.pWhite {
+  color: white;
+}
+
+.vl {
+  border-left: 2px solid #3994dd;
+  height: 50px; /*altura*/
+}
+
+.verticleLine {
+  height: 100%;
+  width: 2px;
+  background-color: #3994dd;
+}
