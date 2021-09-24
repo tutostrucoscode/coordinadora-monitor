@@ -1,7 +1,19 @@
-.padding-top-10px{
-    padding-top: 10px;
+.padding-top-10px {
+  padding-top: 10px;
 }
 
-.padding-top-20px{
-    padding-top: 20px;
+.padding-top-20px {
+  padding-top: 20px;
+}
+
+.margin-bottom-50px {
+  margin-bottom: 50px;
+}
+
+.width-100 {
+  width: 100px; /*ancho*/
+}
+
+.height-100 {
+  height: 100px; /*altura*/
 }

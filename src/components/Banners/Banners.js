@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import * as api from "../API/API";
-import Circle from "react-colorful-circle";
 import "./styles.css";
 
 export default function Banners() {
-  //const [todo, setTodo] = useState({});
   const [todos, setTodos] = useState([]);
   const [trackings, settrackings] = useState([]);
   const [authenticacions, setauthenticacions] = useState([]);
@@ -13,7 +11,6 @@ export default function Banners() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await api.getAPI();
-      //console.log(result.data.status.apis);
       console.log(result.data);
       setTodos(result.data);
       console.log(result.data.status.apis[0].tracking.title);
@@ -47,18 +44,20 @@ export default function Banners() {
 
   return (
     <>
-      <Row className="justify-content-md-around">
-        <Col md="auto">
-          {statusAB()}
-          <h5 className="none-space">All systems operational</h5>
-        </Col>
-        <Col md="auto">
-          <div className="verticleLine"></div>
-        </Col>
-        <Col md="auto">
-          <h6>Refreshed {tiempo}</h6>
-        </Col>
-      </Row>
+      <div className="container-full">
+        <Row className="justify-content-md-around background-color-B padding-top-10px margin-bottom-10px">
+          <Col md="auto">
+            {statusAB()}
+            <h5 className="none-space color-white">All systems operational</h5>
+          </Col>
+          <Col md="auto">
+            <div className="verticleLine"></div>
+          </Col>
+          <Col md="auto">
+            <h6 className="color-white margin-top-3px" >Refreshed {tiempo}</h6>
+          </Col>
+        </Row>
+      </div>
     </>
   );
 }

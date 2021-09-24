@@ -58,17 +58,44 @@ export default function Cards(props) {
     }
     return count;
   };
+
+  const objeB = () => {
+    var myservB = [];
+
+    for (const i in daysB) {
+      myservB.push((myservB["id"] = daysB[i]));
+    }
+    console.log(myservB);
+  };
+
   return (
     <>
-      <Row>
+      {objeB()}
+      <Row className="margin-bottom-50px">
         <Col>
-          <div className="list-group">
+          <div className="list-group ">
             <div className="list-group-item list-group-item-action flex-column align-items-start">
               <div className="d-flex w-100 justify-content-between">
-                <h6 className="mb-1">{tituloA}</h6>
+                <h6 className="mb-1">
+                  {tituloA} | {countDaysB()}
+                </h6>
                 <small>{statusA}</small>
               </div>
-              
+              <div className="mb-1 height-100">
+                <ResponsiveWaffleHtml
+                  data={dataTest}
+                  total={100}
+                  rows={1}
+                  columns={30}
+                  padding={2}
+                  margin={{ top: 5, right: 5, bottom: 5, left: 5 }}
+                  colors={{ scheme: "accent" }}
+                  borderColor={{ from: "color", modifiers: [] }}
+                  animate={true}
+                  motionStiffness={0}
+                  motionDamping={0}
+                />
+              </div>
               <div className="d-flex w-100 justify-content-between">
                 <small>98%</small>
                 <small>Today</small>
@@ -79,7 +106,21 @@ export default function Cards(props) {
                 <h6 className="mb-1">{tituloB}</h6>
                 <small>{statusB}</small>
               </div>
-              <p className="mb-1">|||||||||||||||||||||||||</p>
+              <div className="mb-1 height-100">
+                <ResponsiveWaffleHtml
+                  data={dataTest}
+                  total={100}
+                  rows={1}
+                  columns={30}
+                  padding={3}
+                  margin={{ top: 5, right: 5, bottom: 5, left: 5 }}
+                  colors={{ scheme: "accent" }}
+                  borderColor={{ from: "color", modifiers: [] }}
+                  animate={true}
+                  motionStiffness={0}
+                  motionDamping={0}
+                />
+              </div>
               <div className="d-flex w-100 justify-content-between">
                 <small>98%</small>
                 <small>Today</small>

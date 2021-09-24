@@ -1,0 +1,31 @@
+:root {
+  --background-color-B: #094e84;
+  --verticleLine-footer-color: #3994dd;
+  --color-txt-footer-a: #106eb9;
+}
+
+.background-color-B-footer {
+  background-color: var(--background-color-B);
+}
+
+.verticleLine-footer {
+  height: 100%;
+  width: 2px;
+  background-color: var(--verticleLine-footer-color);
+}
+
+.padding-top {
+  padding-top: 50px;
+}
+
+.padding-bottom {
+  padding-bottom: 10px;
+}
+
+.PBold700 {
+  font-weight: 700;
+}
+
+.color-txt-footer-A {
+  color: var(--color-txt-footer-a);
+}
