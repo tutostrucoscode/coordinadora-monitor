@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import * as api from "../API/API";
 import "./styles.css";
 
@@ -11,11 +11,8 @@ export default function Banners() {
   useEffect(() => {
     const fetchData = async () => {
       const result = await api.getAPI();
-      console.log(result.data);
       setTodos(result.data);
-      console.log(result.data.status.apis[0].tracking.title);
       settrackings(result.data.status.apis[0].tracking);
-      console.log(result.data.status.apis[1].authenticacion.title);
       setauthenticacions(result.data.status.apis[1].authenticacion);
     };
     fetchData();

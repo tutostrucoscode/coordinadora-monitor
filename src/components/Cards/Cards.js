@@ -12,12 +12,8 @@ export default function Cards(props) {
   useEffect(() => {
     const fetchData = async () => {
       const result = await api.getAPI();
-      console.log(result.data);
       setTodos(result.data);
-      console.log(result.data.status.apis[0].tracking.title);
       settrackings(result.data.status.apis[0].tracking);
-      console.log(result.data.status.apis[1].authenticacion.title);
-      console.log(result.data.status.apis[1].authenticacion.days);
       setauthenticacions(result.data.status.apis[1].authenticacion);
     };
     fetchData();
@@ -32,21 +28,39 @@ export default function Cards(props) {
 
   const dataTest = [
     {
-      id: "men",
-      label: "men",
-      value: 24.09136321396135,
+      id: "1",
+      label: "100",
+      value: 100,
       color: "#468df3",
     },
     {
-      id: "women",
-      label: "women",
-      value: 19.02889484746935,
+      id: "1",
+      label: "100",
+      value: 100,
+      color: "#468df3",
+    },
+    {
+      id: "1",
+      label: "100",
+      value: 100,
+      color: "#468df3",
+    },
+    {
+      id: "2",
+      label: "75",
+      value: 75,
       color: "#ba72ff",
     },
     {
-      id: "children",
-      label: "children",
-      value: 21.705236988462115,
+      id: "2",
+      label: "75",
+      value: 75,
+      color: "#ba72ff",
+    },
+    {
+      id: "3",
+      label: "92",
+      value: 92,
       color: "#a1cfff",
     },
   ];
@@ -61,11 +75,37 @@ export default function Cards(props) {
 
   const objeB = () => {
     var myservB = [];
+    var myservtemp = [];
+    var miObjeto = new Object();
+    let myArraytemp = new Array(daysB);
 
-    for (const i in daysB) {
-      myservB.push((myservB["id"] = daysB[i]));
-    }
-    console.log(myservB);
+    /*
+    id: "men",
+    label: "men",
+    value: 24.09136321396135,
+    color: "#468df3",
+    */
+
+    let propiedadesDays = dataTest.map(() => {
+      let propiedades = {
+        id: "datos",
+        label: "datos",
+        value: "datos",
+        color: "datos",
+      };
+      let porcent = (daysB * 100) / 100;
+      if (porcent < 60) {
+        propiedades["value"] = "< 60%";
+      }
+      if (porcent > 60 && porcent < 80) {
+        propiedades["value"] = "60% y 80%";
+      }
+      if (porcent > 80) {
+        propiedades["value"] = "> 80%";
+      }
+      return propiedades;
+    });
+    ///console.log(daysB);
   };
 
   return (
@@ -84,7 +124,7 @@ export default function Cards(props) {
               <div className="mb-1 height-100">
                 <ResponsiveWaffleHtml
                   data={dataTest}
-                  total={100}
+                  total={1000}
                   rows={1}
                   columns={30}
                   padding={2}
@@ -109,7 +149,7 @@ export default function Cards(props) {
               <div className="mb-1 height-100">
                 <ResponsiveWaffleHtml
                   data={dataTest}
-                  total={100}
+                  total={1000}
                   rows={1}
                   columns={30}
                   padding={3}
