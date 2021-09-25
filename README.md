@@ -7,6 +7,9 @@ Proyecto de seleccion coordinadora (Monitoreo de estado de servicios)
 # Video explicacion proyecto
 https://youtu.be/VHJwGKD_I2Y
 
+# Pagina para evidenciar el proyecto
+https://tutostrucoscode.github.io/coordinadora-monitor/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
