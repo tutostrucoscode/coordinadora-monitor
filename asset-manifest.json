@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/coordinadora-monitor/static/css/main.937790f8.chunk.css",
+    "main.js": "/coordinadora-monitor/static/js/main.336a9ec1.chunk.js",
+    "main.js.map": "/coordinadora-monitor/static/js/main.336a9ec1.chunk.js.map",
+    "runtime-main.js": "/coordinadora-monitor/static/js/runtime-main.4202394a.js",
+    "runtime-main.js.map": "/coordinadora-monitor/static/js/runtime-main.4202394a.js.map",
+    "static/css/2.28bb0c3d.chunk.css": "/coordinadora-monitor/static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.486d9595.chunk.js": "/coordinadora-monitor/static/js/2.486d9595.chunk.js",
+    "static/js/2.486d9595.chunk.js.map": "/coordinadora-monitor/static/js/2.486d9595.chunk.js.map",
+    "static/js/3.639c4ca6.chunk.js": "/coordinadora-monitor/static/js/3.639c4ca6.chunk.js",
+    "static/js/3.639c4ca6.chunk.js.map": "/coordinadora-monitor/static/js/3.639c4ca6.chunk.js.map",
+    "index.html": "/coordinadora-monitor/index.html",
+    "static/css/2.28bb0c3d.chunk.css.map": "/coordinadora-monitor/static/css/2.28bb0c3d.chunk.css.map",
+    "static/css/main.937790f8.chunk.css.map": "/coordinadora-monitor/static/css/main.937790f8.chunk.css.map",
+    "static/js/2.486d9595.chunk.js.LICENSE.txt": "/coordinadora-monitor/static/js/2.486d9595.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4202394a.js",
+    "static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.486d9595.chunk.js",
+    "static/css/main.937790f8.chunk.css",
+    "static/js/main.336a9ec1.chunk.js"
+  ]
+}
